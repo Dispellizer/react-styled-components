@@ -28,3 +28,7 @@ const Anchor = styled(Button.withComponent("a"))`
 `;
 
 button의 스타일을 재활용 할수있다.
+
+mixin은 css 그룹이다.
+
+ThemeProvider는 항상 theme을 찾고있음
