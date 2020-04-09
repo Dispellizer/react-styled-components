@@ -1,0 +1,9 @@
+npx create-react-app react-styled-components
+
+git init
+git add .
+git remote add origin url
+git commit -m "txt"
+git push origin master
+
+npm i styled-components
