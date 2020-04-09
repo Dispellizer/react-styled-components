@@ -7,3 +7,24 @@ git commit -m "txt"
 git push origin master
 
 npm i styled-components
+
+const Button = styled.button`
+  border-radius: 50px;
+  padding: 5px;
+  min-width: 120px;
+  color: white;
+  font-weight: 600;
+  -webkit-appearance: none;
+  cursor: pointer;
+  &:active,
+  &:focus {
+    outline: none;
+  }
+  background-color: ${(props) => (props.danger ? "#e74c3c" : "#2ecc71")};
+`;
+
+const Anchor = styled(Button.withComponent("a"))`
+  text-decoration: none;
+`;
+
+button의 스타일을 재활용 할수있다.
